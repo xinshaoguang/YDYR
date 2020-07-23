@@ -1,0 +1,146 @@
+.summary{
+    width: 520px;
+    height: 211px;
+    background: url(../img/bg-monitor-summary.png) no-repeat;
+    background-position: 20px 30px;
+    padding-top: 48px;
+}
+.summary li{
+    float: left;
+    width: 250px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 110px;
+}
+.summary li .count-title{
+    margin-bottom: 10px;
+}
+.summary li.row2{
+    margin-top: 34px;
+}
+.summary li:nth-child(2n){
+    padding-right: 30px;
+}
+.traffic{
+    width: 520px;
+    height: 287px;
+    text-align: center;
+}
+.traffic .downstream,
+.traffic .upstream{
+    height: 110px;
+    padding: 30px 70px 0 190px;
+    box-sizing: border-box;
+}
+.traffic .downstream .count-title,
+.traffic .upstream .count-title{
+    margin-bottom: 18px;
+}
+.traffic .downstream{
+    background: url(../img/bg-downstream-traffic.png) no-repeat;
+    background-position-x: 80px;
+    margin-bottom: 24px;
+}
+.traffic .upstream{
+    background: url(../img/bg-upstream-traffic.png) no-repeat;
+    background-position-x: 80px;
+}
+
+/* 涓棿浠〃鐩� */
+.monitor-gauges{
+    padding-top: 30px;
+}
+.gauges-container{
+    padding-top: 10px;
+}
+.gauges-container .gauge-cpu-container,
+.gauges-container .gauge-memory-container,
+.gauges-container .gauge-disk-container,
+.gauges-container .gauge-point-container {
+    width: 420px;
+    height: 410px;
+    float: left;
+    position: relative;
+}
+.gauges-container div[id]{
+    width: 420px;
+    height: 410px;
+}
+.gauges-container .gauge-title{
+    position: absolute;
+    font-size: 24px;
+    width: 420px;
+    text-align: center;
+    bottom: 0px;
+}
+.gauges-container .gauge-title img{
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+/* 鍙充晶鍙傛暟 */
+.parameter-list{
+    padding-top: 73px;
+}
+.parameter-item{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    height: 99px;
+    margin-bottom: 23px;
+}
+.parameter-item:last-child{
+    margin-bottom: 0;
+}
+.parameter-item .item-title{
+    width: 114px;
+    text-align: center;
+    font-size: 18px;
+    /* vertical-align: bottom; */
+    align-self: flex-end
+}
+.parameter-item .item-content{
+    width: 125px;
+    text-align: center;
+    padding-top: 22px;
+}
+.parameter-item .item-content .count-title{
+    margin-bottom: 10px;
+}
+.parameter-item:nth-child(1){
+    background:  url(../img/bg-monitor-01.png) no-repeat;
+    background-position-x: 37px;
+}
+.parameter-item:nth-child(2){
+    background:  url(../img/bg-monitor-02.png) no-repeat;
+    background-position-x: 37px;
+}
+.parameter-item:nth-child(3){
+    background:  url(../img/bg-monitor-03.png) no-repeat;
+    background-position-x: 37px;
+}
+.parameter-item:nth-child(4){
+    background:  url(../img/bg-monitor-04.png) no-repeat;
+    background-position-x: 37px;
+}
+.parameter-item:nth-child(5){
+    background:  url(../img/bg-monitor-05.png) no-repeat;
+    background-position-x: 37px;
+}
+.parameter-item:nth-child(6){
+    background:  url(../img/bg-monitor-06.png) no-repeat;
+    background-position-x: 37px;
+}
+.parameter-item:nth-child(7){
+    background:  url(../img/bg-monitor-07.png) no-repeat;
+    background-position-x: 37px;
+}
+.source-div{
+	position: absolute;
+    left: 150px;
+    top: 70px;
+    font-size:18px;
+}
+.source-div .active {
+    color: #00fff0!important;
+}

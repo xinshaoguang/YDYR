@@ -1,0 +1,321 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>河北省政务云综合管理平台</title>
+    <link rel="stylesheet" href="./meter/css/reset.css">
+    <link rel="stylesheet" href="./meter/css/common.css">
+    <link rel="stylesheet" href="./meter/css/monitor.css">
+</head>
+
+<body>
+    <div class="main" id="main">
+        <div class="date-time">2020-07-23 星期四 14:1</div>
+        <div class="source-div" id="source_div">
+            <a href="#" class="active" style="color: #fff;text-decoration: none">总体</a>
+            <a href="#" style="color: #fff;text-decoration: none">联通</a>
+            <a href="#" style="color: #fff;text-decoration: none">移动</a></div>
+        <a href="#" id="totality" class="btn-nav nav-totality"></a>
+        <a href="#" id="monitor" class="btn-nav nav-monitor active"></a>
+        <a href="#" id="security" class="btn-nav nav-security"></a>
+        <div class="main-part main-left">
+            <div class="summary">
+                <ul>
+                    <li>
+                        <p class="count-title text-color-green">正常</p>
+                        <p class="count-num"><span class="text-color-green">358</span>&nbsp;<span
+                                class="text-color-cyan">台</span></p>
+                    </li>
+                    <li>
+                        <p class="count-title text-color-yellow">警告</p>
+                        <p class="count-num"><span class="text-color-yellow">5</span>&nbsp;<span
+                                class="text-color-cyan">台</span></p>
+                    </li>
+                    <li class="row2">
+                        <p class="count-title text-color-red">错误</p>
+                        <p class="count-num"><span class="text-color-red">8</span>&nbsp;<span
+                                class="text-color-cyan">家</span></p>
+                    </li>
+                    <li class="row2">
+                        <p class="count-title text-color-cyan">凭证</p>
+                        <p class="count-num text-color-cyan"><span>263</span>&nbsp;<span>台</span></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="traffic">
+                <div class="downstream">
+                    <div class="count-title">宽带上行流量</div>
+                    <div class="count-num"><span class="text-color-yellow">536</span><span
+                            class="text-color-cyan">GB</span>
+                    </div>
+                </div>
+                <div class="upstream">
+                    <div class="count-title">宽带下行流量</div>
+                    <div class="count-num"><span class="text-color-yellow">12</span><span
+                            class="text-color-cyan">GB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="load-balance">
+                <div class="common-title">负载均衡情况</div>
+                <div class="load-balance-chart" id="load-balance"
+                    style="width: 520px; height: 360px; -webkit-tap-highlight-color: transparent; user-select: none;"
+                    _echarts_instance_="ec_1595483903835">
+                    <div
+                        style="position: relative; overflow: hidden; width: 520px; height: 360px; padding: 0px; margin: 0px; border-width: 0px;">
+                        <canvas data-zr-dom-id="zr_0" width="1560" height="1080"
+                            style="position: absolute; left: 0px; top: 0px; width: 520px; height: 360px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-part main-middle">
+            <div class="monitor-gauges">
+                <div class="common-title">虚拟机整体使用率</div>
+                <div class="gauges-container">
+                    <div class="gauge-cpu-container">
+                        <div id="gauge-cpu" _echarts_instance_="ec_1595483903837"
+                            style="-webkit-tap-highlight-color: transparent; user-select: none;">
+                            <div
+                                style="position: relative; overflow: hidden; width: 420px; height: 410px; padding: 0px; margin: 0px; border-width: 0px;">
+                                <canvas data-zr-dom-id="zr_0" width="1260" height="1230"
+                                    style="position: absolute; left: 0px; top: 0px; width: 420px; height: 410px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                            </div>
+                        </div>
+                        <div class="gauge-title"><img src="./meter/img/icon-gauge-cpu.png"><span>CPU使用率</span></div>
+                    </div>
+                    <div class="gauge-memory-container">
+                        <div id="gauge-memory" _echarts_instance_="ec_1595483903838"
+                            style="-webkit-tap-highlight-color: transparent; user-select: none;">
+                            <div
+                                style="position: relative; overflow: hidden; width: 420px; height: 410px; padding: 0px; margin: 0px; border-width: 0px;">
+                                <canvas data-zr-dom-id="zr_0" width="1260" height="1230"
+                                    style="position: absolute; left: 0px; top: 0px; width: 420px; height: 410px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                            </div>
+                        </div>
+                        <div class="gauge-title"><img src="./meter/img/icon-gauge-memory.png"><span>内存使用率</span></div>
+                    </div>
+                    <div class="gauge-disk-container">
+                        <div id="gauge-disk" _echarts_instance_="ec_1595483903839"
+                            style="-webkit-tap-highlight-color: transparent; user-select: none;">
+                            <div
+                                style="position: relative; overflow: hidden; width: 420px; height: 410px; padding: 0px; margin: 0px; border-width: 0px;">
+                                <canvas data-zr-dom-id="zr_0" width="1260" height="1230"
+                                    style="position: absolute; left: 0px; top: 0px; width: 420px; height: 410px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                            </div>
+                        </div>
+                        <div class="gauge-title"><img src="./meter/img/icon-gauge-disk.png"><span>磁盘存储使用率</span></div>
+                    </div>
+                    <div class="gauge-point-container">
+                        <div id="gauge-point" _echarts_instance_="ec_1595483903836"
+                            style="-webkit-tap-highlight-color: transparent; user-select: none;">
+                            <div
+                                style="position: relative; overflow: hidden; width: 420px; height: 410px; padding: 0px; margin: 0px; border-width: 0px;">
+                                <canvas data-zr-dom-id="zr_0" width="1260" height="1230"
+                                    style="position: absolute; left: 0px; top: 0px; width: 420px; height: 410px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                            </div>
+                        </div>
+                        <div class="gauge-title"><img src="./meter/img/icon-gauge-point.png"><span>可用探测点百分比</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-part main-right">
+            <ul class="parameter-list">
+                <li class="parameter-item">
+                    <p class="item-title">探测点</p>
+                    <div class="item-content">
+                        <p class="count-title text-color-cyan">总数</p>
+                        <p class="count-num"><span class="text-color-yellow">853</span><span
+                                class="text-color-cyan">个</span></p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">可用</p>
+                        <p class="count-num"><span class="text-color-yellow">824</span><span
+                                class="text-color-cyan">个</span></p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">不可用</p>
+                        <p class="count-num"><span class="text-color-red">29</span><span
+                                class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="parameter-item">
+                    <p class="item-title">网络设备</p>
+                    <div class="item-content">
+                        <p class="count-title text-color-cyan">总数</p>
+                        <p class="count-num"><span class="text-color-yellow">120</span><span
+                                class="text-color-cyan">个</span></p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">可用</p>
+                        <p class="count-num"><span class="text-color-yellow">116</span><span
+                                class="text-color-cyan">个</span></p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">不可用</p>
+                        <p class="count-num"><span class="text-color-red">4</span><span class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="parameter-item">
+                    <p class="item-title">安全设备</p>
+                    <div class="item-content">
+                        <p class="count-title text-color-cyan">总数</p>
+                        <p class="count-num"><span class="text-color-yellow">50</span><span
+                                class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">可用</p>
+                        <p class="count-num"><span class="text-color-yellow">48</span><span
+                                class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">不可用</p>
+                        <p class="count-num"><span class="text-color-red">2</span><span class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="parameter-item">
+                    <p class="item-title">操作系统</p>
+                    <div class="item-content">
+                        <p class="count-title text-color-cyan">总数</p>
+                        <p class="count-num"><span class="text-color-yellow">100</span><span
+                                class="text-color-cyan">个</span></p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">可用</p>
+                        <p class="count-num"><span class="text-color-yellow">96</span><span
+                                class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">不可用</p>
+                        <p class="count-num"><span class="text-color-red">4</span><span class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="parameter-item">
+                    <p class="item-title">数据库</p>
+                    <div class="item-content">
+                        <p class="count-title text-color-cyan">总数</p>
+                        <p class="count-num"><span class="text-color-yellow">150</span><span
+                                class="text-color-cyan">个</span></p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">可用</p>
+                        <p class="count-num"><span class="text-color-yellow">137</span><span
+                                class="text-color-cyan">个</span></p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">不可用</p>
+                        <p class="count-num"><span class="text-color-red">13</span><span
+                                class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="parameter-item">
+                    <p class="item-title">中间件</p>
+                    <div class="item-content">
+                        <p class="count-title text-color-cyan">总数</p>
+                        <p class="count-num"><span class="text-color-yellow">80</span><span
+                                class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">可用</p>
+                        <p class="count-num"><span class="text-color-yellow">80</span><span
+                                class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">不可用</p>
+                        <p class="count-num"><span class="text-color-red">0</span><span class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="parameter-item">
+                    <p class="item-title">其他</p>
+                    <div class="item-content">
+                        <p class="count-title text-color-cyan">总数</p>
+                        <p class="count-num"><span class="text-color-yellow">40</span><span
+                                class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">可用</p>
+                        <p class="count-num"><span class="text-color-yellow">32</span><span
+                                class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                    <div class="item-content text-color-cyan">
+                        <p class="count-title">不可用</p>
+                        <p class="count-num"><span class="text-color-red">8</span><span class="text-color-cyan">个</span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./meter/js/jquery.js"></script>
+    <script src="./meter/js/common.js"></script>
+    <script src="./meter/js/echarts.min.js"></script>
+    <script src="./meter/js/monitor.js"></script>
+    <script>
+        $(function () {
+            var ctx = "\/";
+            var prefix = ctx + "resource/overall";
+            $("#totality").click(function () {
+                window.open(prefix + "/index", '_self');
+            });
+            $("#monitor").click(function () {
+                window.open(prefix + "/monitor", '_self');
+            });
+            $("#security").click(function () {
+                window.open(prefix + "/security", '_self');
+            });
+
+            //仪表板CPU使用率
+            $(function () {
+                $.ajax({
+                    type: 'post',
+                    url: prefix + "/data/0",
+                    success: function (result) {
+                        var data = result.overalllist;
+                        var disdata = result.distribution;
+                        var html = '';
+                        for (var i = 0; i < data.length; i++) {
+                            if (data[i].name.indexOf('CPU') != -1) {
+                                setCPU(parseFloat(disdata[i].number / data[i].number) * 100);
+                            } else if (data[i].name.indexOf('内存') != -1) {
+                                setMemory(parseFloat(disdata[i].number / data[i].number) * 100);
+                            } else if (data[i].name.indexOf('存储') != -1) {
+                                setDisk(parseFloat(disdata[i].number / data[i].number) * 100)
+                            }
+                        }
+                    }
+                });
+            })
+            //内存使用率
+            //磁盘存储使用率
+            //可用探测点百分比
+        });
+        $('#source_div').on('click', 'a', function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

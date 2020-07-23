@@ -1,0 +1,163 @@
+html{
+    color: #fff;
+}
+
+.main{
+    width: 1920px;
+    height: 1080px;
+    background: url(../img/background.JPG) no-repeat center;
+    background-size: 1920px 1080px;
+    margin: 0 auto;
+    transform-origin: 0 0;
+    position: relative;
+}
+.date-time{
+    float: right;
+    height: 55px;
+    line-height: 55px;
+    margin-right: 40px;
+    font-size: 16px;
+}
+.btn-nav{
+    position: absolute;
+    display: block;
+    width: 190px;
+    height: 40px;
+    top: 60px;
+}
+.nav-totality{
+    background: url(../img/bg-btn-totality.png) no-repeat center;
+    left: 480px;
+}
+.nav-totality.active{
+    background: url(../img/bg-btn-totality-active.png) no-repeat center;
+}
+.nav-monitor{
+    background: url(../img/bg-btn-monitor.png) no-repeat center;
+    left: 1250px;
+}
+.nav-monitor.active{
+    background: url(../img/bg-btn-monitor-active.png) no-repeat center;
+}
+.nav-security{
+    background: url(../img/bg-btn-security.png) no-repeat center;
+    left: 1395px;
+}
+.nav-security.active{
+    background: url(../img/bg-btn-security-active.png) no-repeat center;
+}
+
+
+
+.main-left,
+.main-right{
+    width: 520px;
+    height: 942px;
+    position: absolute;
+    top: 118px;
+}
+.main-middle{
+    width: 840px;
+    height: 942px;
+    position: absolute;
+    top: 118px;
+    /* background: rgba(255, 255, 255, .2); */
+}
+
+.main-left{
+    left: 20px;
+}
+.main-middle{
+    left: 540px;
+}
+.main-right{
+    right: 20px;
+}
+
+
+/* 文字颜色 */
+.text-color-cyan{
+    color: #00fff0;
+}
+.text-color-green{
+    color: #7dfc00;
+}
+.text-color-yellow{
+    color: #ffff00;
+}
+.text-color-orange{
+    color: #ff8d02;
+}
+.text-color-red{
+    color: #ff3030;
+}
+
+/* 公用标题 */
+.common-title{
+    width: 100%;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 20px;
+    background: url(../img/bg-common-title.png) no-repeat center;
+    cursor: default;
+}
+
+.count-title{
+    font-size: 18px;
+    cursor: default;
+}
+.count-num{
+    font-size: 24px;
+    cursor: default;
+}
+
+/* 没有指针的仪表盘 */
+.gauge-without-pointer{
+    height: 120px;
+    width: 120px;
+}
+
+
+/* 公用表格 */
+table.table-head{
+    font-size: 16px;
+    cursor: default;
+}
+table.table-head th{
+    border-bottom: 1px solid #00ffff;
+    height: 39px;
+    line-height: 39px;
+}
+table.table-body{
+    table-layout: fixed;
+    width: 1px;
+    cursor: default;
+}
+table.table-body td{
+    border-bottom: 1px solid #3a6a90;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+table.table-body tr:last-child td{
+    border: none;
+}
+table.table-body{
+    /* border-bottom: 1px solid #00ffff; */
+}
+
+/* 修改的自定义滚动条样式 */
+.mCSB_scrollTools{
+    width: 4px;
+}
+.mCSB_inside>.mCSB_container{
+    margin-right: 4px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: #005192;
+}
