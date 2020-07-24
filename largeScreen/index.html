@@ -22,245 +22,525 @@
         <a href="#" id="security" class="btn-nav nav-security"></a>
         <div class="main-part main-left">
             <div class="summary">
+                <div class="unit-total">
+                    <p>101</p>
+                    <p>上云单位总量</p>
+                </div>
+                <div class="net-num">
+                    <div class="int-unit">
+                        <p class="count-title">互联网单位</p>
+                        <p class="count-num">
+                            <span class="text-color-yellow">51</span>
+                            <span class=" text-color-cyan">家</span>
+                        </p>
+                    </div>
+                    <div class="gov-unit">
+                        <p class="count-title">政务外网单位</p>
+                        <p class="count-num">
+                            <span class="text-color-yellow">51</span>
+                            <span class=" text-color-cyan">家</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="phy-machine">
                 <ul>
                     <li>
-                        <p class="count-title text-color-green">正常</p>
-                        <p class="count-num"><span class="text-color-green">358</span>&nbsp;<span
-                                class="text-color-cyan">台</span></p>
+                        <span>物理机总台数&nbsp;：</span>
+                        <i class="text-color-yellow">100</i>
+                        <b>台</b>
                     </li>
                     <li>
-                        <p class="count-title text-color-yellow">警告</p>
-                        <p class="count-num"><span class="text-color-yellow">5</span>&nbsp;<span
-                                class="text-color-cyan">台</span></p>
+                        <span>物理机总CPU&nbsp;：</span>
+                        <i class="text-color-yellow">100</i>
+                        <b>核</b>
                     </li>
-                    <li class="row2">
-                        <p class="count-title text-color-red">错误</p>
-                        <p class="count-num"><span class="text-color-red">8</span>&nbsp;<span
-                                class="text-color-cyan">家</span></p>
+                    <li>
+                        <span>物理机总内存&nbsp;：</span>
+                        <i class="text-color-yellow">100</i>
+                        <b>GB</b>
                     </li>
-                    <li class="row2">
-                        <p class="count-title text-color-cyan">凭证</p>
-                        <p class="count-num text-color-cyan"><span>263</span>&nbsp;<span>台</span></p>
+                    <li>
+                        <span>物理机总储存&nbsp;：</span>
+                        <i class="text-color-yellow">100</i>
+                        <b>GB</b>
                     </li>
                 </ul>
             </div>
-            <div class="traffic">
-                <div class="downstream">
-                    <div class="count-title">宽带上行流量</div>
-                    <div class="count-num"><span class="text-color-yellow">536</span><span
-                            class="text-color-cyan">GB</span>
+            <div class="tableShow">
+                <div class="common-title">
+                    上云系统数量排行
+                </div>
+                <div class="resource-newly-container">
+                    <table class="table-head text-color-cyan">
+                        <colgroup style="width: 66px;"></colgroup>
+                        <colgroup style="width: 310px;"></colgroup>
+                        <colgroup style="width: 120px"></colgroup>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>单位名称</th>
+                                <th>数量</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="need-scroll mCustomScrollbar _mCS_1">
+                        <div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside"
+                            style="max-height: none;" tabindex="0">
+                            <div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;"
+                                dir="ltr">
+                                <table class="table-body">
+                                    <colgroup style="width: 66px;"></colgroup>
+                                    <colgroup style="width: 310px;"></colgroup>
+                                    <colgroup style="width: 120px"></colgroup>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>名称</td>
+                                            <td>河北</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>名称</td>
+                                            <td>湖南</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>名称</td>
+                                            <td>北京</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>名称</td>
+                                            <td>辽宁</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>名称</td>
+                                            <td>河北</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="mCSB_1_scrollbar_vertical"
+                                class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"
+                                style="display: block;">
+                                <div class="mCSB_draggerContainer">
+                                    <div id="mCSB_1_dragger_vertical" class="mCSB_dragger"
+                                        style="position: absolute; min-height: 30px; display: block; height: 186px; max-height: 250px; top: 0px;">
+                                        <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                    </div>
+                                    <div class="mCSB_draggerRail"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="upstream">
-                    <div class="count-title">宽带下行流量</div>
-                    <div class="count-num"><span class="text-color-yellow">12</span><span
-                            class="text-color-cyan">GB</span>
-                    </div>
-                </div>
+
             </div>
-            <div class="load-balance">
-                <div class="common-title">负载均衡情况</div>
-                <div class="load-balance-chart" id="load-balance"
-                    style="width: 520px; height: 360px; -webkit-tap-highlight-color: transparent; user-select: none;"
-                    _echarts_instance_="ec_1595483903835">
-                    <div
-                        style="position: relative; overflow: hidden; width: 520px; height: 360px; padding: 0px; margin: 0px; border-width: 0px;">
-                        <canvas data-zr-dom-id="zr_0" width="1560" height="1080"
-                            style="position: absolute; left: 0px; top: 0px; width: 520px; height: 360px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+            <div class="tableShow">
+                <div class="common-title">
+                    上云系统数量排行
+                </div>
+                <div class="resource-newly-container">
+                    <table class="table-head text-color-cyan">
+                        <colgroup style="width: 66px;"></colgroup>
+                        <colgroup style="width: 310px;"></colgroup>
+                        <colgroup style="width: 120px"></colgroup>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>单位名称</th>
+                                <th>数量</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="need-scroll mCustomScrollbar _mCS_1">
+                        <div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside"
+                            style="max-height: none;" tabindex="0">
+                            <div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;"
+                                dir="ltr">
+                                <table class="table-body">
+                                    <colgroup style="width: 66px;"></colgroup>
+                                    <colgroup style="width: 310px;"></colgroup>
+                                    <colgroup style="width: 120px"></colgroup>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>名称</td>
+                                            <td>河北</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>名称</td>
+                                            <td>湖南</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>名称</td>
+                                            <td>北京</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>名称</td>
+                                            <td>辽宁</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>名称</td>
+                                            <td>河北</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="mCSB_1_scrollbar_vertical"
+                                class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"
+                                style="display: block;">
+                                <div class="mCSB_draggerContainer">
+                                    <div id="mCSB_1_dragger_vertical" class="mCSB_dragger"
+                                        style="position: absolute; min-height: 30px; display: block; height: 186px; max-height: 250px; top: 0px;">
+                                        <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                    </div>
+                                    <div class="mCSB_draggerRail"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="main-part main-middle">
             <div class="monitor-gauges">
-                <div class="common-title">虚拟机整体使用率</div>
-                <div class="gauges-container">
-                    <div class="gauge-cpu-container">
-                        <div id="gauge-cpu" _echarts_instance_="ec_1595483903837"
-                            style="-webkit-tap-highlight-color: transparent; user-select: none;">
-                            <div
-                                style="position: relative; overflow: hidden; width: 420px; height: 410px; padding: 0px; margin: 0px; border-width: 0px;">
-                                <canvas data-zr-dom-id="zr_0" width="1260" height="1230"
-                                    style="position: absolute; left: 0px; top: 0px; width: 420px; height: 410px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
-                            </div>
-                        </div>
-                        <div class="gauge-title"><img src="./meter/img/icon-gauge-cpu.png"><span>CPU使用率</span></div>
+                <div class="virtual-machine">
+                    <div class="common-title">
+                        虚拟机整体使用率
                     </div>
-                    <div class="gauge-memory-container">
-                        <div id="gauge-memory" _echarts_instance_="ec_1595483903838"
-                            style="-webkit-tap-highlight-color: transparent; user-select: none;">
-                            <div
-                                style="position: relative; overflow: hidden; width: 420px; height: 410px; padding: 0px; margin: 0px; border-width: 0px;">
-                                <canvas data-zr-dom-id="zr_0" width="1260" height="1230"
-                                    style="position: absolute; left: 0px; top: 0px; width: 420px; height: 410px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                    <ul>
+                        <li>
+                            <div id='gauge-cpu'></div>
+                            <div class="gauge-title">
+                                <img src="./meter/img/icon-gauge-cpu.png" alt="">
+                                <span>CPU使用率</span>
                             </div>
-                        </div>
-                        <div class="gauge-title"><img src="./meter/img/icon-gauge-memory.png"><span>内存使用率</span></div>
+                        </li>
+                        <li>
+                            <div id='gauge-memory'></div>
+                            <div class="gauge-title">
+                                <img src="./meter/img/icon-gauge-memory.png" alt="">
+                                <span>内存使用率</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div id='gauge-disk'></div>
+                            <div class="gauge-title">
+                                <img src="./meter/img/icon-gauge-disk.png" alt="">
+                                <span>磁盘存储使用率</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div id='gauge-point'></div>
+                            <div class="gauge-title">
+                                <img src="./meter/img/icon-gauge-point.png" alt="">
+                                <span>宽带使用率</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="totalShow">
+                    <ul class="totalShowCont">
+                        <li>
+                            <div >
+                                <p class="fl f16">虚机总资源</p>
+                                <p class="fr f16"><span class="text-color-yellow">120</span>个</p>
+                            </div>
+                            <div>
+                                <p class="fl">开机：<span class="text-color-blue">100</span>个</p>
+                                <p class="fl">关机：<span class="text-color-blue">20</span>个</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div >
+                                <p class="fl f16">虚机总资源</p>
+                                <p class="fr f16"><span class="text-color-yellow">120</span>个</p>
+                            </div>
+                            <div>
+                                <p class="fl">开机：<span class="text-color-blue">100</span>个</p>
+                                <p class="fl">关机：<span class="text-color-blue">20</span>个</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div >
+                                <p class="fl f16">虚机总资源</p>
+                                <p class="fr f16"><span class="text-color-yellow">120</span>个</p>
+                            </div>
+                            <div>
+                                <p class="fl">开机：<span class="text-color-blue">100</span>个</p>
+                                <p class="fl">关机：<span class="text-color-blue">20</span>个</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div >
+                                <p class="fl f16">虚机总资源</p>
+                                <p class="fr f16"><span class="text-color-yellow">120</span>个</p>
+                            </div>
+                            <div>
+                                <p class="fl">开机：<span class="text-color-blue">100</span>个</p>
+                                <p class="fl">关机：<span class="text-color-blue">20</span>个</p>
+                            </div>
+                        </li>
+                    <ul>
+                </div>
+                <div class="broadband">
+                    <div class="circle1">
+                        <div class="greatCircle"></div>
+                        <div class="smallCircle"></div>
                     </div>
-                    <div class="gauge-disk-container">
-                        <div id="gauge-disk" _echarts_instance_="ec_1595483903839"
-                            style="-webkit-tap-highlight-color: transparent; user-select: none;">
-                            <div
-                                style="position: relative; overflow: hidden; width: 420px; height: 410px; padding: 0px; margin: 0px; border-width: 0px;">
-                                <canvas data-zr-dom-id="zr_0" width="1260" height="1230"
-                                    style="position: absolute; left: 0px; top: 0px; width: 420px; height: 410px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
-                            </div>
-                        </div>
-                        <div class="gauge-title"><img src="./meter/img/icon-gauge-disk.png"><span>磁盘存储使用率</span></div>
+                    <div class="circle2">
+                        <div class="greatCircle"></div>
+                        <div class="smallCircle"></div>
                     </div>
-                    <div class="gauge-point-container">
-                        <div id="gauge-point" _echarts_instance_="ec_1595483903836"
-                            style="-webkit-tap-highlight-color: transparent; user-select: none;">
-                            <div
-                                style="position: relative; overflow: hidden; width: 420px; height: 410px; padding: 0px; margin: 0px; border-width: 0px;">
-                                <canvas data-zr-dom-id="zr_0" width="1260" height="1230"
-                                    style="position: absolute; left: 0px; top: 0px; width: 420px; height: 410px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
-                            </div>
-                        </div>
-                        <div class="gauge-title"><img src="./meter/img/icon-gauge-point.png"><span>可用探测点百分比</span>
-                        </div>
+                    <div class="circle3">
+                        <div class="greatCircle"></div>
+                        <div class="smallCircle"></div>
+                    </div>
+
+                    <ul>
+                        <li class="broadband-li upword-flow-li">
+                            <p class="upword-flow">宽带上行流量</p>
+                            <p>
+                                <span class="text-color-yellow">56</span>
+                                <span class="text-color-cyan">&nbsp;GB</span>
+                            </p>
+                        </li>
+                        <li class="broadband-li down-flow-li">
+                            <p class="upword-flow">宽带下行流量</p>
+                            <p>
+                                <span class="text-color-yellow">56</span>
+                                <span class="text-color-cyan">&nbsp;GB</span>
+                            </p>
+                        </li>
+                        <li class="broadband-li trusteeship-li ">
+                            <p class="upword-flow">托管物理机</p>
+                            <p>
+                                <span class="text-color-yellow">56</span>
+                                <span class="text-color-cyan">&nbsp;U</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gov-cloud">
+                    <div class="common-title">
+                        政务云计费情况
+                    </div>
+                    <div class="govChart" id='govChart'>
+
                     </div>
                 </div>
             </div>
         </div>
         <div class="main-part main-right">
-            <ul class="parameter-list">
-                <li class="parameter-item">
-                    <p class="item-title">探测点</p>
-                    <div class="item-content">
-                        <p class="count-title text-color-cyan">总数</p>
-                        <p class="count-num"><span class="text-color-yellow">853</span><span
-                                class="text-color-cyan">个</span></p>
+            <div class="parameter-list">
+                <div class="safety">
+                    <ul>
+                        <li>
+                            <p>运行状态</p>
+                            <p class="text-color-green">健康</p>
+                        </li>
+                        <li>
+                            <p>已运行天数</p>
+                            <p class="text-color-yellow"><span>565</span>&nbsp;天</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rate">
+                    <div class="common-title">
+                        资源池整体分配
                     </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">可用</p>
-                        <p class="count-num"><span class="text-color-yellow">824</span><span
-                                class="text-color-cyan">个</span></p>
+                    <ul>
+                        <li class="usage-rate">
+                            <div class="chart"> </div>
+                            <div class="rate-data">
+                                <p class="rate-title">CPU使用率</p>
+                                <p class="text-color-blue">已分配：<span class="text-color-yellow">11</span>&nbsp;核</p>
+                                <p class="text-color-blue">未分配：<span class="text-color-yellow">11</span>&nbsp;核</p>
+                                <p class="text-color-blue">总量：<span class="text-color-yellow">222</span>&nbsp;核</p>
+                            </div>
+                        </li>
+                        <li class="usage-rate">
+                            <div class="chart"></div>
+                            <div class="rate-data">
+                                <p class="rate-title">硬盘储存使用率</p>
+                                <p class="text-color-blue">已使用：<span class="text-color-yellow">11</span>&nbsp;GB</p>
+                                <p class="text-color-blue">未使用：<span class="text-color-yellow">11</span>&nbsp;GB</p>
+                                <p class="text-color-blue">总量：<span class="text-color-yellow">222</span>&nbsp;GB</p>
+                            </div>
+                        </li>
+                        <li class="usage-rate">
+                            <div class="chart"></div>
+                            <div class="rate-data">
+                                <p class="rate-title">内存使用率</p>
+                                <p class="text-color-blue">已分配：<span class="text-color-yellow">11</span>&nbsp;GB</p>
+                                <p class="text-color-blue">未分配：<span class="text-color-yellow">11</span>&nbsp;GB</p>
+                                <p class="text-color-blue">总量：<span class="text-color-yellow">222</span>&nbsp;GB</p>
+                            </div>
+                        </li>
+                        <li class="usage-rate">
+                            <div class="chart"></div>
+                            <div class="rate-data">
+                                <p class="rate-title">总贷款使用率</p>
+                                <p class="text-color-blue">已分配：<span class="text-color-yellow">11</span>&nbsp;GB</p>
+                                <p class="text-color-blue">未分配：<span class="text-color-yellow">11</span>&nbsp;GB</p>
+                                <p class="text-color-blue">总量：<span class="text-color-yellow">222</span>&nbsp;GB</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tableShow">
+                    <div class="common-title">
+                        上云系统数量排行
                     </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">不可用</p>
-                        <p class="count-num"><span class="text-color-red">29</span><span
-                                class="text-color-cyan">个</span>
-                        </p>
+                    <div class="resource-newly-container">
+                        <table class="table-head text-color-cyan">
+                            <colgroup style="width: 66px;"></colgroup>
+                            <colgroup style="width: 310px;"></colgroup>
+                            <colgroup style="width: 120px"></colgroup>
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>单位名称</th>
+                                    <th>数量</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="need-scroll mCustomScrollbar _mCS_1">
+                            <div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside"
+                                style="max-height: none;" tabindex="0">
+                                <div id="mCSB_1_container" class="mCSB_container"
+                                    style="position:relative; top:0; left:0;" dir="ltr">
+                                    <table class="table-body">
+                                        <colgroup style="width: 66px;"></colgroup>
+                                        <colgroup style="width: 310px;"></colgroup>
+                                        <colgroup style="width: 120px"></colgroup>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>名称</td>
+                                                <td>河北</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>名称</td>
+                                                <td>湖南</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>名称</td>
+                                                <td>北京</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>名称</td>
+                                                <td>辽宁</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>名称</td>
+                                                <td>河北</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="mCSB_1_scrollbar_vertical"
+                                    class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"
+                                    style="display: block;">
+                                    <div class="mCSB_draggerContainer">
+                                        <div id="mCSB_1_dragger_vertical" class="mCSB_dragger"
+                                            style="position: absolute; min-height: 30px; display: block; height: 186px; max-height: 250px; top: 0px;">
+                                            <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                        </div>
+                                        <div class="mCSB_draggerRail"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </li>
-                <li class="parameter-item">
-                    <p class="item-title">网络设备</p>
-                    <div class="item-content">
-                        <p class="count-title text-color-cyan">总数</p>
-                        <p class="count-num"><span class="text-color-yellow">120</span><span
-                                class="text-color-cyan">个</span></p>
+                </div>
+                <div class="tableShow">
+                    <div class="common-title">
+                        上云系统数量排行
                     </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">可用</p>
-                        <p class="count-num"><span class="text-color-yellow">116</span><span
-                                class="text-color-cyan">个</span></p>
+                    <div class="resource-newly-container">
+                        <table class="table-head text-color-cyan">
+                            <colgroup style="width: 66px;"></colgroup>
+                            <colgroup style="width: 310px;"></colgroup>
+                            <colgroup style="width: 120px"></colgroup>
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>单位名称</th>
+                                    <th>数量</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="need-scroll mCustomScrollbar _mCS_1">
+                            <div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside"
+                                style="max-height: none;" tabindex="0">
+                                <div id="mCSB_1_container" class="mCSB_container"
+                                    style="position:relative; top:0; left:0;" dir="ltr">
+                                    <table class="table-body">
+                                        <colgroup style="width: 66px;"></colgroup>
+                                        <colgroup style="width: 310px;"></colgroup>
+                                        <colgroup style="width: 120px"></colgroup>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>名称</td>
+                                                <td>河北</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>名称</td>
+                                                <td>湖南</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>名称</td>
+                                                <td>北京</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>名称</td>
+                                                <td>辽宁</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>名称</td>
+                                                <td>河北</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="mCSB_1_scrollbar_vertical"
+                                    class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"
+                                    style="display: block;">
+                                    <div class="mCSB_draggerContainer">
+                                        <div id="mCSB_1_dragger_vertical" class="mCSB_dragger"
+                                            style="position: absolute; min-height: 30px; display: block; height: 186px; max-height: 250px; top: 0px;">
+                                            <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                        </div>
+                                        <div class="mCSB_draggerRail"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">不可用</p>
-                        <p class="count-num"><span class="text-color-red">4</span><span class="text-color-cyan">个</span>
-                        </p>
-                    </div>
-                </li>
-                <li class="parameter-item">
-                    <p class="item-title">安全设备</p>
-                    <div class="item-content">
-                        <p class="count-title text-color-cyan">总数</p>
-                        <p class="count-num"><span class="text-color-yellow">50</span><span
-                                class="text-color-cyan">个</span>
-                        </p>
-                    </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">可用</p>
-                        <p class="count-num"><span class="text-color-yellow">48</span><span
-                                class="text-color-cyan">个</span>
-                        </p>
-                    </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">不可用</p>
-                        <p class="count-num"><span class="text-color-red">2</span><span class="text-color-cyan">个</span>
-                        </p>
-                    </div>
-                </li>
-                <li class="parameter-item">
-                    <p class="item-title">操作系统</p>
-                    <div class="item-content">
-                        <p class="count-title text-color-cyan">总数</p>
-                        <p class="count-num"><span class="text-color-yellow">100</span><span
-                                class="text-color-cyan">个</span></p>
-                    </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">可用</p>
-                        <p class="count-num"><span class="text-color-yellow">96</span><span
-                                class="text-color-cyan">个</span>
-                        </p>
-                    </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">不可用</p>
-                        <p class="count-num"><span class="text-color-red">4</span><span class="text-color-cyan">个</span>
-                        </p>
-                    </div>
-                </li>
-                <li class="parameter-item">
-                    <p class="item-title">数据库</p>
-                    <div class="item-content">
-                        <p class="count-title text-color-cyan">总数</p>
-                        <p class="count-num"><span class="text-color-yellow">150</span><span
-                                class="text-color-cyan">个</span></p>
-                    </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">可用</p>
-                        <p class="count-num"><span class="text-color-yellow">137</span><span
-                                class="text-color-cyan">个</span></p>
-                    </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">不可用</p>
-                        <p class="count-num"><span class="text-color-red">13</span><span
-                                class="text-color-cyan">个</span>
-                        </p>
-                    </div>
-                </li>
-                <li class="parameter-item">
-                    <p class="item-title">中间件</p>
-                    <div class="item-content">
-                        <p class="count-title text-color-cyan">总数</p>
-                        <p class="count-num"><span class="text-color-yellow">80</span><span
-                                class="text-color-cyan">个</span>
-                        </p>
-                    </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">可用</p>
-                        <p class="count-num"><span class="text-color-yellow">80</span><span
-                                class="text-color-cyan">个</span>
-                        </p>
-                    </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">不可用</p>
-                        <p class="count-num"><span class="text-color-red">0</span><span class="text-color-cyan">个</span>
-                        </p>
-                    </div>
-                </li>
-                <li class="parameter-item">
-                    <p class="item-title">其他</p>
-                    <div class="item-content">
-                        <p class="count-title text-color-cyan">总数</p>
-                        <p class="count-num"><span class="text-color-yellow">40</span><span
-                                class="text-color-cyan">个</span>
-                        </p>
-                    </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">可用</p>
-                        <p class="count-num"><span class="text-color-yellow">32</span><span
-                                class="text-color-cyan">个</span>
-                        </p>
-                    </div>
-                    <div class="item-content text-color-cyan">
-                        <p class="count-title">不可用</p>
-                        <p class="count-num"><span class="text-color-red">8</span><span class="text-color-cyan">个</span>
-                        </p>
-                    </div>
-                </li>
-            </ul>
+                </div>
+
+            </div>
         </div>
     </div>
 
