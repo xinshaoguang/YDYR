@@ -5,9 +5,10 @@
     <!-- <meta name="viewport" content="width=device-width"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>河北省政务云综合管理平台</title>
-    <link rel="stylesheet" href="./meter/css/reset.css">
-    <link rel="stylesheet" href="./meter/css/common.css">
-    <link rel="stylesheet" href="./meter/css/monitor.css">
+    <link rel="stylesheet" href="meter/css/reset.css">
+    <link rel="stylesheet" href="meter/css/common.css">
+    <link rel="stylesheet" href="meter/css/monitor.css">
+    <!-- <link rel="stylesheet" href="meter/css/jquery.mCustomScrollbar.min.css"> -->
 </head>
 
 <body>
@@ -22,6 +23,14 @@
         <a href="#" id="security" class="btn-nav nav-security"></a>
         <div class="main-part main-left">
             <div class="summary">
+                <div class="circle4">
+                    <div class="greatCircle"></div>
+                    <div class="smallCircle"></div>
+                </div>
+                <div class="circle5">
+                    <div class="greatCircle"></div>
+                    <div class="smallCircle"></div>
+                </div>
                 <div class="unit-total">
                     <p>101</p>
                     <p>上云单位总量</p>
@@ -97,28 +106,28 @@
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>名称</td>
                                             <td>河北</td>
+                                            <td>190</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>名称</td>
-                                            <td>湖南</td>
+                                            <td>河北</td>
+                                            <td>190</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>名称</td>
-                                            <td>北京</td>
+                                            <td>河北</td>
+                                            <td>190</td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
-                                            <td>名称</td>
-                                            <td>辽宁</td>
+                                            <td>河北</td>
+                                            <td>190</td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
-                                            <td>名称</td>
                                             <td>河北</td>
+                                            <td>190</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -137,11 +146,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="tableShow">
                 <div class="common-title">
-                    上云系统数量排行
+                    新增资源列表
                 </div>
                 <div class="resource-newly-container">
                     <table class="table-head text-color-cyan">
@@ -152,7 +160,7 @@
                             <tr>
                                 <th>序号</th>
                                 <th>单位名称</th>
-                                <th>数量</th>
+                                <th>系统名称</th>
                             </tr>
                         </thead>
                     </table>
@@ -169,28 +177,28 @@
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>名称</td>
                                             <td>河北</td>
+                                            <td>oa系统</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>名称</td>
-                                            <td>湖南</td>
+                                            <td>河北</td>
+                                            <td>oa系统</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>名称</td>
-                                            <td>北京</td>
+                                            <td>河北</td>
+                                            <td>oa系统</td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
-                                            <td>名称</td>
-                                            <td>辽宁</td>
+                                            <td>河北</td>
+                                            <td>oa系统</td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
-                                            <td>名称</td>
                                             <td>河北</td>
+                                            <td>oa系统</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -250,8 +258,10 @@
                 </div>
                 <div class="totalShow">
                     <ul class="totalShowCont">
-                        <li>
-                            <div >
+                        <li style="position:relative ">
+                            <div class="bar" id="bar1" style="position:absolute;width:100% ;height:100%;left:0;top:0; z-index:1">
+                            </div>
+                            <div style="z-index:2">
                                 <p class="fl f16">虚机总资源</p>
                                 <p class="fr f16"><span class="text-color-yellow">120</span>个</p>
                             </div>
@@ -260,37 +270,40 @@
                                 <p class="fl">关机：<span class="text-color-blue">20</span>个</p>
                             </div>
                         </li>
-                        <li>
-                            <div >
-                                <p class="fl f16">虚机总资源</p>
+                        <li style="position:relative ">
+                            <div class="bar" id="bar2" style="position:absolute;width:100% ;height:100%;left:0;top:0; z-index:1"></div>
+                            <div>
+                                <p class="fl f16">政务外网IP</p>
                                 <p class="fr f16"><span class="text-color-yellow">120</span>个</p>
                             </div>
                             <div>
-                                <p class="fl">开机：<span class="text-color-blue">100</span>个</p>
-                                <p class="fl">关机：<span class="text-color-blue">20</span>个</p>
+                                <p class="fl">已用数：<span class="text-color-blue">100</span>个</p>
+                                <p class="fl">未用数：<span class="text-color-blue">20</span>个</p>
                             </div>
                         </li>
-                        <li>
-                            <div >
-                                <p class="fl f16">虚机总资源</p>
+                        <li style="position:relative ">
+                            <div class="bar" id="bar3" style="position:absolute;width:100% ;height:100%;left:0;top:0; z-index:1"></div>
+                            <div>
+                                <p class="fl f16">上云系统</p>
                                 <p class="fr f16"><span class="text-color-yellow">120</span>个</p>
                             </div>
                             <div>
-                                <p class="fl">开机：<span class="text-color-blue">100</span>个</p>
-                                <p class="fl">关机：<span class="text-color-blue">20</span>个</p>
+                                <p class="fl">互联网：<span class="text-color-blue">100</span>个</p>
+                                <p class="fl">政务外网：<span class="text-color-blue">20</span>个</p>
                             </div>
                         </li>
-                        <li>
-                            <div >
-                                <p class="fl f16">虚机总资源</p>
+                        <li style="position:relative ">
+                            <div class="bar" id="bar4" style="position:absolute;width:100% ;height:100%;left:0;top:0; z-index:1"></div>
+                            <div>
+                                <p class="fl f16">互联网IP</p>
                                 <p class="fr f16"><span class="text-color-yellow">120</span>个</p>
                             </div>
                             <div>
-                                <p class="fl">开机：<span class="text-color-blue">100</span>个</p>
-                                <p class="fl">关机：<span class="text-color-blue">20</span>个</p>
+                                <p class="fl">已用数：<span class="text-color-blue">100</span>个</p>
+                                <p class="fl">未用数：<span class="text-color-blue">20</span>个</p>
                             </div>
                         </li>
-                    <ul>
+                        <ul>
                 </div>
                 <div class="broadband">
                     <div class="circle1">
@@ -360,7 +373,7 @@
                     </div>
                     <ul>
                         <li class="usage-rate">
-                            <div class="chart"> </div>
+                            <div class="chart" id="resource-cpu"> </div>
                             <div class="rate-data">
                                 <p class="rate-title">CPU使用率</p>
                                 <p class="text-color-blue">已分配：<span class="text-color-yellow">11</span>&nbsp;核</p>
@@ -369,7 +382,7 @@
                             </div>
                         </li>
                         <li class="usage-rate">
-                            <div class="chart"></div>
+                            <div class="chart" id="resource-hardDisk"></div>
                             <div class="rate-data">
                                 <p class="rate-title">硬盘储存使用率</p>
                                 <p class="text-color-blue">已使用：<span class="text-color-yellow">11</span>&nbsp;GB</p>
@@ -378,7 +391,7 @@
                             </div>
                         </li>
                         <li class="usage-rate">
-                            <div class="chart"></div>
+                            <div class="chart" id="resource-memory"></div>
                             <div class="rate-data">
                                 <p class="rate-title">内存使用率</p>
                                 <p class="text-color-blue">已分配：<span class="text-color-yellow">11</span>&nbsp;GB</p>
@@ -387,9 +400,9 @@
                             </div>
                         </li>
                         <li class="usage-rate">
-                            <div class="chart"></div>
+                            <div class="chart" id="resource-bandwidth"></div>
                             <div class="rate-data">
-                                <p class="rate-title">总贷款使用率</p>
+                                <p class="rate-title">总带宽使用率</p>
                                 <p class="text-color-blue">已分配：<span class="text-color-yellow">11</span>&nbsp;GB</p>
                                 <p class="text-color-blue">未分配：<span class="text-color-yellow">11</span>&nbsp;GB</p>
                                 <p class="text-color-blue">总量：<span class="text-color-yellow">222</span>&nbsp;GB</p>
@@ -399,7 +412,7 @@
                 </div>
                 <div class="tableShow">
                     <div class="common-title">
-                        上云系统数量排行
+                        计费排行
                     </div>
                     <div class="resource-newly-container">
                         <table class="table-head text-color-cyan">
@@ -410,7 +423,7 @@
                                 <tr>
                                     <th>序号</th>
                                     <th>单位名称</th>
-                                    <th>数量</th>
+                                    <th>金额</th>
                                 </tr>
                             </thead>
                         </table>
@@ -423,32 +436,31 @@
                                         <colgroup style="width: 66px;"></colgroup>
                                         <colgroup style="width: 310px;"></colgroup>
                                         <colgroup style="width: 120px"></colgroup>
-
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>名称</td>
                                                 <td>河北</td>
+                                                <td>100万元</td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>名称</td>
-                                                <td>湖南</td>
+                                                <td>河北</td>
+                                                <td>100万元</td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
-                                                <td>名称</td>
-                                                <td>北京</td>
+                                                <td>河北</td>
+                                                <td>100万元</td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
-                                                <td>名称</td>
-                                                <td>辽宁</td>
+                                                <td>河北</td>
+                                                <td>100万元</td>
                                             </tr>
                                             <tr>
                                                 <td>5</td>
-                                                <td>名称</td>
                                                 <td>河北</td>
+                                                <td>100万元</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -470,7 +482,7 @@
                 </div>
                 <div class="tableShow">
                     <div class="common-title">
-                        上云系统数量排行
+                        资源使用数量排行
                     </div>
                     <div class="resource-newly-container">
                         <table class="table-head text-color-cyan">
@@ -481,7 +493,7 @@
                                 <tr>
                                     <th>序号</th>
                                     <th>单位名称</th>
-                                    <th>数量</th>
+                                    <th>资源数量</th>
                                 </tr>
                             </thead>
                         </table>
@@ -494,32 +506,31 @@
                                         <colgroup style="width: 66px;"></colgroup>
                                         <colgroup style="width: 310px;"></colgroup>
                                         <colgroup style="width: 120px"></colgroup>
-
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>名称</td>
                                                 <td>河北</td>
+                                                <td>10000</td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>名称</td>
-                                                <td>湖南</td>
+                                                <td>河北</td>
+                                                <td>10000</td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
-                                                <td>名称</td>
-                                                <td>北京</td>
+                                                <td>河北</td>
+                                                <td>10000</td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
-                                                <td>名称</td>
-                                                <td>辽宁</td>
+                                                <td>河北</td>
+                                                <td>10000</td>
                                             </tr>
                                             <tr>
                                                 <td>5</td>
-                                                <td>名称</td>
                                                 <td>河北</td>
+                                                <td>10000</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -544,10 +555,13 @@
         </div>
     </div>
 
-    <script src="./meter/js/jquery.js"></script>
-    <script src="./meter/js/common.js"></script>
-    <script src="./meter/js/echarts.min.js"></script>
-    <script src="./meter/js/monitor.js"></script>
+    <script src="meter/js/jquery.js"></script>
+    <script src="meter/js/common.js"></script>
+    <script src="meter/js/echarts.min.js"></script>
+    <script src="meter/js/monitor.js"></script>
+    <script src="meter/js/jquery-ui-1.10.4.min.js"></script>
+    <script src="meter/js/jquery.mousewheel-3.0.6.min.js"></script>
+    <script src="meter/js/jquery.mCustomScrollbar.min.js"></script>
     <script>
         $(function () {
             var ctx = "\/";

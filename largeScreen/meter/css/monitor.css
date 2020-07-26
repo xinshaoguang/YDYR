@@ -4,6 +4,21 @@
     background: url(../img/bg-t-total-unit.png) no-repeat;
     background-position: 20px 30px;
     padding-top: 48px;
+    position: relative;
+}
+.circle4{
+    width: 80px;    
+    height:80px;
+    position: absolute;
+    top: 43px;
+    left: 236px;
+}
+.circle5{
+    width: 80px;    
+    height:80px;
+    position: absolute;
+    top: 140px;
+    left: 236px;
 }
 .summary .unit-total{
     float:left;
@@ -43,7 +58,7 @@
 /* 物理机 */
 .phy-machine{
     height:200px;
-    background-color:rgba(0,0,0,0.4);
+    /* background-color:rgba(0,0,0,0.4); */
 
 }
 .phy-machine ul{
@@ -70,7 +85,7 @@
     box-sizing: border-box;
     padding: 20px 12px 0;
     height:240px;               
-    background-color:rgba(255,0,0,0.1);
+    /* background-color:rgba(255,0,0,0.1); */
 }
 
 /* 中间部分*/
@@ -83,7 +98,7 @@
     height:300px;
     box-sizing: border-box;
     padding-top: 20px;
-    background: rgba(73, 60, 192, 0.542);
+    /* background: rgba(73, 60, 192, 0.542); */
 }
 .virtual-machine ul {
     box-sizing: border-box;
@@ -123,7 +138,7 @@
 
 .totalShow{
     height:226px;
-    background: rgba(73, 60, 192, 0.142);
+    /* background: rgba(73, 60, 192, 0.142); */
     overflow: hidden;
 }
 .totalShow .totalShowCont{
@@ -137,7 +152,7 @@
     float: left;
     height:100px;
     width: 50%;
-    background: rgba(73, 60, 192, 0.542);
+    /* background: rgba(73, 60, 192, 0.542); */
     box-sizing: border-box;
     padding: 0 30px;
 }
@@ -151,32 +166,41 @@
 .totalShow ul.totalShowCont li div:nth-child(2) p:nth-child(1){
     width: 140px;
 }
-
+.need-scroll{
+    height: 129px;
+    border-bottom:  1px solid #00FFFF;
+}
 
 
 
 .broadband{
 
     height:120px;
-    background: rgba(73, 60, 192, 0.542);
+    /* background: rgba(73, 60, 192, 0.542); */
     background: url('../img/bg-totality-middle-bottom.png') no-repeat;
     background-position: 45px 15px;
     position: relative;
 }
 .broadband  .circle1{
+    width: 100px;
+    height:100px;
     position:absolute;
-    left: 90px;
-    top: 61px;
+    left: 40px;
+    top: 11px;
 }
 .broadband  .circle2{
+    width: 100px;
+    height:100px;
     position:absolute;
-    left: 350px;
-    top: 61px;
+    left: 300px;
+    top:11px;
 }
 .broadband  .circle3{
+    width: 100px;
+    height:100px;
     position:absolute;
-    left: 600px;
-    top: 61px;
+    left: 550px;
+    top: 11px;
 }
 
 .broadband ul {
@@ -202,14 +226,14 @@
 }
 .govTable{
     height:296px;
-    background: rgba(73, 60, 192, 0.142);
+    /* background: rgba(73, 60, 192, 0.142); */
 }
 .gov-cloud{
     padding-top: 36px;
     box-sizing: border-box;
 }
 .govChart{
-    height:200px;
+    height:220px;
 }
 
 
@@ -217,11 +241,11 @@
 .parameter-list{
     /* padding-top: 73px; */
     height:100%;
-    background: rgba(25, 221, 172, 0.342);
+    /* background: rgba(25, 221, 172, 0.342); */
 }
 .parameter-list .safety{
     height:180px;
-    background: rgba(2,2,2,.5);
+    /* background: rgba(2,2,2,.5); */
     background:  url('../img/bg-totality-security.png') no-repeat;
     background-position: 20px 16px;   
 }
@@ -247,7 +271,7 @@
 /* 使用率 */
 .parameter-list .rate{
     height:280px;
-    background: rgba(2,2,2,.3);
+    /* background: rgba(2,2,2,.3); */
 }
 .rate ul {
     padding:5px 0 0 10px;
@@ -256,7 +280,7 @@
     float: left;
     width: 250px;
     height: 110px;
-    background: rgba(2,2,2,.4);
+    /* background: rgba(2,2,2,.4); */
     display: flex;
     margin-bottom: 15px;
 }
@@ -264,12 +288,12 @@
     width: 110px;
     height:110px;
     margin-right: 10px;
-    background: rgba(2,2,2,.5);
+    /* background: rgba(2,2,2,.5); */
 }
 .rate ul li .rate-data{
     width: 130px;
     height:110px;
-    background: rgba(2,2,2,.6);
+    /* background: rgba(2,2,2,.6); */
 }
 
 .rate ul li .rate-data p{
@@ -287,7 +311,7 @@
 
 
 .parameter-list .tableShow{
-    background: rgba(2,2,2,.8);
+    /* background: rgba(2,2,2,.8); */
 }
 
 
@@ -309,26 +333,24 @@
     position: relative;
 }
 .greatCircle {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: url('../img/dahuan.png') no-repeat;
-    /* background-position: 50% 50%; */
     background-size: contain;
     animation:rotate1 15s linear infinite;
 }
 .smallCircle {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: url('../img/dahuan-1.png') no-repeat;
-    /* background-position: 50% 50%; */
     background-size: contain;
     animation: rotate2 15s linear infinite;
 }
