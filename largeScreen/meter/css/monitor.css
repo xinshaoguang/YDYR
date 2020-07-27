@@ -231,10 +231,31 @@
 .gov-cloud{
     padding-top: 36px;
     box-sizing: border-box;
+    position: relative;
 }
 .govChart{
     height:220px;
 }
+.gov-cloud .timeTab{
+    position: absolute;
+    top: 74px;
+    right: 30px;
+    height:24px;
+    line-height: 24px;
+}
+.gov-cloud .timeTab p{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+.gov-cloud .timeTab p span{
+   margin-left:3px;
+}
+/* .tabActive{
+    background-color: #00ffff;
+} */
 
 
 /* 右边部分*/
@@ -308,13 +329,9 @@
     font-size: 18px;
 }
 
-
-
 .parameter-list .tableShow{
     /* background: rgba(2,2,2,.8); */
 }
-
-
 
 .source-div{
 	position: absolute;

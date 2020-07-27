@@ -366,27 +366,27 @@ gaugePoint.setOption(gaugePointOption);
             bottom: '3%',
             containLabel: true
         },
-        legend: {
-            right: 10,
-            top: 0,
-            data: [
-                {
-                    name: '按月',
-                    textStyle: {
-                        color: '#FF8C00',
-                        fontSize: 16,
-                    },
-                },
-                {
-                    name: '按季度',
-                    textStyle: {
-                        color: '#00FFFF',
-                        fontSize: 16,
-                        fontWeight: 'bold',
-                    },
-                }
-            ]
-        },
+        // legend: {
+        //     right: 10,
+        //     top: 0,
+        //     data: [
+        //         {
+        //             name: '按月',
+        //             textStyle: {
+        //                 color: '#FF8C00',
+        //                 fontSize: 16,
+        //             },
+        //         },
+        //         {
+        //             name: '按季度',
+        //             textStyle: {
+        //                 color: '#00FFFF',
+        //                 fontSize: 16,
+        //                 fontWeight: 'bold',
+        //             },
+        //         }
+        //     ]
+        // },
         xAxis: [
             {
                 type: 'category',
@@ -430,10 +430,11 @@ gaugePoint.setOption(gaugePointOption);
                 itemStyle: {
                     normal: {
                         //每个柱子的颜色即为colorList数组里的每一项，如果柱子数目多于colorList的长度，则柱子颜色循环使用该数组
-                        color: function (params) {
-                            var colorList = ['#00ffff', '#ffff00'];
-                            return colorList[params.dataIndex % 2];
-                        }
+                        // color: function (params) {
+                        //     var colorList = ['#00ffff', '#ffff00'];
+                        //     return colorList[params.dataIndex % 2];
+                        // },
+                        color: '#00ffff'
                     },
 
                 },
